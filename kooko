@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>레이아웃 테스트</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #5a5a5a;
+    font-family: sans-serif;
+  }
+
+  /* 전체 컨테이너 */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 260px 1fr;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* 좌/우 컬럼 */
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* 중앙 컬럼 */
+  .center {
+    background: #24247a;
+    border-radius: 6px;
+    min-height: 900px;
+  }
+
+  /* 카드 공통 */
+  .card {
+    background: #24247a;
+    border-radius: 6px;
+    height: 140px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- 왼쪽 -->
+  <div class="side">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+  <!-- 중앙 -->
+  <div class="center"></div>
+
+  <!-- 오른쪽 -->
+  <div class="side">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
